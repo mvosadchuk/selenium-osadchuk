@@ -1,2 +1,4 @@
 # selenium-osadchuk
-Repository for training in Autotests
+Repository for Training in Automated Testing
+
+Change #1
