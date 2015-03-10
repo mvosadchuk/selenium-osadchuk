@@ -1,4 +1,5 @@
 # selenium-osadchuk
-Repository for Training in Automated Testing
+topchemsia
+and lomaem to chto est' ! 
 
 Change #1
