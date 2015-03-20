@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="firstTestSuite" verbose="1">
+    <!--suite name="firstTestSuite" verbose="1" parallel="tests" thread-count="2" -->
+    <!--parameter name="expectedCount" value="2"/-->
+    <test name="FailWithException">
+        <classes>
+            <class name="functional.FailWithException" />
+        </classes>
+    </test>
+    <test name="FailWithoutException">
+        <classes>
+            <class name="functional.FailWithoutException" />
+        </classes>
+    </test>
+    <test name="FirstClass">
+        <classes>
+            <class name="functional.FirstClass" />
+        </classes>
+    </test>
+    <test name="FindJobPositions">
+        <classes>
+            <class name="functional.FindJobPositions" />
+        </classes>
+    </test>
+    <!--http://blog.wedoqa.com/2013/07/how-to-run-parallel-tests-with-selenium-webdriver-and-testng-2/-->
+</suite>
