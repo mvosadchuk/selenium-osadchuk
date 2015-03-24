@@ -2,13 +2,6 @@
 <suite name="firstTestSuite" verbose="1">
     <!--suite name="firstTestSuite" verbose="1" parallel="tests" thread-count="2" -->
     <!--parameter name="expectedCount" value="2"/-->
-    <test name="CreateSuiteTest">
-        <classes>
-            <class name="testlink.functional.CreateSuiteTest" />
-        </classes>
-    </test>
-
-    <!--
     <test name="FailWithException">
         <classes>
             <class name="functional.FailWithException" />
@@ -29,6 +22,5 @@
             <class name="functional.FindJobPositions" />
         </classes>
     </test>
-    -->
     <!--http://blog.wedoqa.com/2013/07/how-to-run-parallel-tests-with-selenium-webdriver-and-testng-2/-->
 </suite>
