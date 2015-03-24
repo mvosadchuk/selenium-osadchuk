@@ -35,7 +35,7 @@ public class HomePage {
 
     public SpecificationPage pressTestSpecification ()
     {
-        WebDriverWait wait = new WebDriverWait(driver, 15);
+        //WebDriverWait wait = new WebDriverWait(driver, 15);
         driver.switchTo().defaultContent();
         driver.switchTo().frame(driver.findElement(mainFrame));
         //wait.until(ExpectedConditions.presenceOfElementLocated(headerFrame));
