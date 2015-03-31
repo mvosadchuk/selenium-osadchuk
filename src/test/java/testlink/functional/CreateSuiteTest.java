@@ -63,7 +63,8 @@ public class CreateSuiteTest extends TestSteps{
     }
 
     @Test //(dataProvider = "testSuiteData")
-    public void createSuite(TestSuite suite, TestCase testCase, List<TestStep> steps)
+    //public void createSuite(TestSuite suite, TestCase testCase, List<TestStep> steps)
+    public void createSuite()
     {
         Assert.assertTrue(login("admin", "admin"),"Login failed.");
         Assert.assertTrue(createTestSuite(suite), "Test Suite was not created.");

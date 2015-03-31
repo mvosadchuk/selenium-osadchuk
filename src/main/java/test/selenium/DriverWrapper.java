@@ -13,8 +13,8 @@ import java.util.Set;
  * Created by Maryna.Osadchuk on 3/27/2015.
  */
 public class DriverWrapper implements WebDriver {
-    private WebDriver driver;
-    private static final int TIME_TO_WAIT = 15;
+    public WebDriver driver;
+    private static final int TIME_TO_WAIT = 20;
 
     public DriverWrapper(WebDriver driver)
     {this.driver = driver;}
@@ -37,6 +37,8 @@ public class DriverWrapper implements WebDriver {
 
     @Override
     public List<WebElement> findElements(By by) {
+        WebDriverWait wait = new WebDriverWait(driver, TIME_TO_WAIT);
+        wait.until(ExpectedConditions.presenceOfElementLocated(by));
         return driver.findElements(by);
     }
 
