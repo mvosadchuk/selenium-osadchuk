@@ -8,6 +8,21 @@
     <artifactId>selenium-osadchuk</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <profiles>
+        <profile>
+            <id>firefox_local</id>
+            <properties>
+                <browser.name>firefox</browser.name>
+            </properties>
+        </profile>
+        <profile>
+            <id>chrome_local</id>
+            <properties>
+                <browser.name>chrome</browser.name>
+            </properties>
+        </profile>
+    </profiles>
+
     <properties>
         <selenium.version>2.45.0</selenium.version>
         <testng.version>6.8.21</testng.version>

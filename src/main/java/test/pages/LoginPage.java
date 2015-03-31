@@ -6,9 +6,7 @@ import org.openqa.selenium.WebDriver;
 /**
  * Created by Maryna.Osadchuk on 3/20/2015.
  */
-public class LoginPage {
-
-    protected WebDriver driver;
+public class LoginPage extends AbstractPage {
 
     private static final String URL = "http://demo.testlink.org/latest/login.php";
     private static final By loginField = By.id("login");
@@ -17,7 +15,7 @@ public class LoginPage {
 
     public LoginPage (WebDriver driver)
     {
-        this.driver = driver;
+        super(driver);
     }
 
     public void open ()

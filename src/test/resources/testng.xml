@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="firstTestSuite" verbose="1">
-    <!--suite name="firstTestSuite" verbose="1" parallel="tests" thread-count="2" -->
+    <!--suite name="firstTestSuite" verbose="1" parallel="testlink.tests" thread-count="2" -->
     <!--parameter name="expectedCount" value="2"/-->
     <test name="CreateSuiteTest">
         <classes>
@@ -30,5 +30,5 @@
         </classes>
     </test>
     -->
-    <!--http://blog.wedoqa.com/2013/07/how-to-run-parallel-tests-with-selenium-webdriver-and-testng-2/-->
+    <!--http://blog.wedoqa.com/2013/07/how-to-run-parallel-testlink.tests-with-selenium-webdriver-and-testng-2/-->
 </suite>
